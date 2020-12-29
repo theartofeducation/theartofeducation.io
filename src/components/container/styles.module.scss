@@ -1,0 +1,11 @@
+@import "@aoeu/sass-common/variables";
+
+.container {
+  margin: 0 auto;
+}
+
+@media (min-width: $bp-large) {
+  .container {
+    max-width: 64rem;
+  }
+}

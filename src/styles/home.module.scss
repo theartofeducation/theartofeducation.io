@@ -1,0 +1,87 @@
+@import "@aoeu/sass-common/variables";
+@import "@aoeu/sass-common/modules/animations";
+
+.intro {
+  margin-bottom: 5rem;
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 1.5rem auto;
+  }
+}
+
+.resourcesHeading {
+  border-bottom: 1px solid var(--color-gray-lightest);
+  color: var(--color-aoeu-oracle);
+  font-size: 2.25rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.resourceList {
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  margin: 2rem 0;
+  padding-bottom: 5rem;
+}
+
+.resource {
+  // max-width: 25rem;
+}
+
+.resourceCard {
+  height: 100%;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 3.125rem;
+  }
+
+  article {
+    flex: 1 1 auto;
+    font-weight: normal;
+  }
+
+  footer {
+    .list-item {
+      margin: 0;
+
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.resourceLink {
+  margin: 0 0.25rem;
+}
+
+.linkIcon {
+  --size: 2rem;
+  height: var(--size);
+  width: var(--size);
+}
+
+.externalLinkIcon {
+  --size: 2.5rem;
+  height: var(--size);
+  width: var(--size);
+
+  .resourceLink & {
+    margin-top: -0.2rem;
+  }
+}
+
+@media all and (min-width: $bp-large) {
+  .intro {
+    margin: 3rem auto 5rem auto;
+    max-width: 55rem;
+  }
+}

@@ -1,0 +1,65 @@
+@import "@aoeu/sass-common/variables";
+@import "@aoeu/sass-common/modules/animations";
+
+.header {
+  background: var(--color-aoeu-blue);
+  border-bottom: 1px solid var(--color-aoeu-oracle);
+  padding: 1rem;
+
+  a {
+    align-items: center;
+    color: var(--color-aoeu-athens-gray);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin: 1rem 0 2rem 0;
+  fill: var(--color-aoeu-athens-gray);
+  @include smooth-transitions;
+}
+
+@media all and (min-width: $bp-small) {
+  .header {
+    padding: 2rem;
+  }
+
+  .logo {
+    width: $bp-xsmall;
+  }
+}
+
+@media all and (min-width: $bp-medium) {
+  .logo {
+    margin-bottom: 3rem;
+    width: $bp-small;
+  }
+}
+
+@media all and (min-width: $bp-large) {
+  .header {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .logo {
+    width: $bp-medium;
+  }
+}
