@@ -2,9 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useTranslations } from "next-intl"
 import Link from "next/link"
-// import { AOEULogo } from "@aoeu/logos"
-import { ReactComponent as AOEULogo } from "@aoeu/logo-svgs/aoeu-logo-horizontal.svg"
-import { Container } from "../container"
+import { ReactComponent as AOEULogo } from "@/images/aoeu-logo-horizontal.svg"
+import { Container } from "@/components/container"
 import styles from "./styles.module.scss"
 
 export const Header = ({ siteTitle }) => {

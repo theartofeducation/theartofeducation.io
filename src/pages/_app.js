@@ -3,8 +3,8 @@ import Head from "next/head"
 import PropTypes from "prop-types"
 import { NextIntlProvider } from "next-intl"
 import { getTranslations } from "../lang"
-import "../styles/main.global.scss"
-import "../styles/external-styles.scss"
+import "@/styles/main.global.scss"
+// import "../styles/external-styles.scss"
 
 function onIntlError(error) {
   if (error.code === "MISSING_MESSAGE") {

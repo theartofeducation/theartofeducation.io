@@ -1,9 +1,8 @@
 import { useTranslations } from "next-intl"
 import PropTypes from "prop-types"
 import Head from "next/head"
-import { Header } from "../header"
-import { NotificationCenter } from "@aoeu/notification"
-import { isNotEmpty } from "@aoeu/util"
+import { Header } from "@/components/header"
+import { isNotEmpty } from "@/util"
 import styles from "./layout.module.scss"
 
 const resolvePageTitle = ({ t, title }) => {
@@ -29,7 +28,6 @@ export default function Layout({ title, children }) {
       <main className={styles.main}>
         {children}
       </main>
-      <NotificationCenter />
     </>
   )
 }

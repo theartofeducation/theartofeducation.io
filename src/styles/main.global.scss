@@ -1,10 +1,10 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import "@aoeu/sass-common/modules/animations";
-@import "@aoeu/sass-common/modules/colors";
-@import "@aoeu/sass-common/modules/layout";
-@import "@aoeu/sass-common/modules/typography";
+@import "modules/animations";
+@import "modules/colors";
+@import "modules/layout";
+@import "modules/typography";
 
 :root {
   --color-white: #fff;
