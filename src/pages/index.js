@@ -1,12 +1,12 @@
 import clsx from "clsx"
 import { useTranslations } from "next-intl"
-import { Icon } from "../components/icon"
-import Layout from "../components/layout"
-import { ExternalLink } from "@aoeu/external-link"
-import { List, ListItem } from "@aoeu/list"
-import { Container } from "../components/container"
-import { Card } from "../components/card"
-import styles from "../styles/home.module.scss"
+import { Icon } from "@/components/icon"
+import Layout from "@/components/layout"
+import { ExternalLink } from "@/components/external-link"
+import { List, ListItem } from "@/components/list"
+import { Container } from "@/components/container"
+import { Card } from "@/components/card"
+import styles from "@/styles/home.module.scss"
 
 export default function Home() {
   const t = useTranslations("pages.index")
