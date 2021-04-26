@@ -72,7 +72,7 @@ export default function Home() {
                     </ExternalLink>
                   </ListItem>
                   <ListItem className={styles.resourceLink}>
-                    <ExternalLink url="https://theartofeducation.github.io/engineering-docs">
+                    <ExternalLink url="https://docs.theartofeducation.io">
                       <Icon
                         iconSet="hero-outline"
                         iconName="external-link"
